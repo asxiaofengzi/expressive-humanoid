@@ -68,5 +68,8 @@ def train(args):
 
 if __name__ == '__main__':
     # Log configs immediately
+    print('========================开始==============================')
     args = get_args()
+    print('============================arg===============')
+    print(args)
     train(args)

@@ -63,12 +63,12 @@ def process_file(i, fbx_file, all_fbx_path):
                 root_joint="Hips",
                 fps=60
             )
-            motion.to_file(f"data/npy/{fbx_file[:-4]}.npy")
+            motion.to_file(f"/home/js/xiaofengzi/expressive-humanoid/ASE/ase/poselib/data/npy/{fbx_file[:-4]}.npy")
     except:
         print(f"Error in {fbx_file}")
 
 def main():
-    all_fbx_path = "data/cmu_fbx_all/"
+    all_fbx_path = "/home/js/xiaofengzi/expressive-humanoid/ASE/ase/poselib/data/cmu_fbx_all/"
     all_fbx_files = os.listdir(all_fbx_path)
     all_fbx_files.sort()
 
